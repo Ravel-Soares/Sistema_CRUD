@@ -57,21 +57,63 @@
     <td> <?php echo $dado["email"]; ?> </td>
     <td> <?php echo $dado["senha"]; ?> </td>
     <td>
-      <a href="">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
-      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+   <div>
+        <a style="margin: 0 10px 0 0 ;" href="editar.php?editar=<?php echo $dado['id'] ?>">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
       </svg>
       </a> 
+
+         <a style="margin: 0 10px 0 0 ;" href="apagar.php?apagar=<?php echo $dado['id'] ?>">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+      </a> 
+   </div>
+      
     </td>
     </tr>
     <?php }  ?>
   </table>
-        </DIV>
+       <!-- TABELA DO BANCO DE DADOS// -->
+    </DIV>
         </header>
+   </div>
+   <!-- BOTÕES DE OPÇÃO -->
+   <div class="config_banco" style="padding: 10px;">
+
+    <div>
+      <h1 style="color: #0d6efd ;">Adcionar um usuario</h1>
+    </div>
+
+      <!-- BOTÕES DE OPÇÃO // -->
+
+   <!-- ATUALIZAR BANCO  -->
+   <div class="opcoes_configura">
+     <form action="atualizar.php" method="POST">
+       <label class="titulo-opcoes">Nome</label>
+     <input class="input-opcoes" type="text" name="nome">
+     <br>
+
+      <label class="titulo-opcoes">E-mail</label>
+     <input class="input-opcoes" type="email" name="email">
+     <br>
+      <label class="titulo-opcoes">Senha</label>
+     <input class="input-opcoes" type="password" name="senha">
+     <br>
+     <div class="">
+       <input type="submit" value="Adcionar" name="Adcionar" class="botao-opcoes">
+     </div>
+     </form>
+     <!-- ATUALIZAR BANCO//  -->
+   </div>
+
    </div>
     </main>
 
     </script>
+
   </body>
 </html>
 

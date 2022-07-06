@@ -24,7 +24,7 @@
  <!-- BOTÕES DE OPÇÃO -->
    <div class="editar_dados" style="padding: 10px;">
 
-  <div class="titulo_atualiza text-center" style="color: blue;">
+  <div class="titulo_atualiza text-center" style="color: #0d6efd ;">
     <h1>Atualizar dados</h1>
   </div>
    <!-- ATUALIZAR BANCO  -->
@@ -42,7 +42,7 @@
      <input class="input-opcoes" value="<?php echo $edit['senha']  ?>" type="text" name="senha">
      <br>
      <div class="">
-       <input type="submit" value="Atualizar" name="atualizar" class="botao-opcoes">
+       <input type="submit" value="Atualizar" name="atualizar" class="btn btn-primary center">
      </div>
      </form>
      <!-- ATUALIZAR BANCO//  -->
