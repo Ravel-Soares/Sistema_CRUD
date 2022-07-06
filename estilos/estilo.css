@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+.conteudo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.tabela_do_banco{
+    width: 58%;
+    margin-right: 1% ;
+    margin-left: 1%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.tabela_do_banco .pesquisar{
+    width: 400px;
+}
+
+.config_banco{
+    width: 39%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.botao-opcao{
+    margin: 10px;
+    background-color: #e3eaef;
+    display: inline-block;
+    padding: 8px 15px 8px 15px; 
+    border-radius: 5px;
+}
+
+.input-opcoes{
+    display: block;
+    background-color: #e3eaef;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.botao-opcoes{
+    color: white;
+    background-color: #4653f7;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
