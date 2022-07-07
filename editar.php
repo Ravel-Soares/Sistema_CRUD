@@ -29,8 +29,9 @@
   </div>
    <!-- ATUALIZAR BANCO  -->
    <div class="opcoes_configura">
-      <input class="input-opcoes" value="<?php echo $edit['id']  ?>" type="hidden" name="id">
      <form action="edit-final.php" method="POST">
+
+      <input class="input-opcoes" value="<?php echo $edit['id']  ?>" type="hidden" name="id">
        <label class="titulo-opcoes">Nome</label>
      <input class="input-opcoes" value="<?php echo $edit['nome']  ?>" type="text" name="nome">
      <br>
@@ -44,6 +45,7 @@
      <div class="">
        <input type="submit" value="Atualizar" name="atualizar" class="btn btn-primary center">
      </div>
+
      </form>
      <!-- ATUALIZAR BANCO//  -->
 

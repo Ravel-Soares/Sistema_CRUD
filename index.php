@@ -23,7 +23,7 @@
     $exibe = mysqli_fetch_assoc($query);
     $consulta = $connection->query("SELECT * FROM usuario")
     ?>
-
+    <div><a style="text-decoration: none;" href="index.php"><h1 style="color: #0d6efd; margin: 10px 0 10px 10px ; text-decoration: none;">CRUD</h1></a></div>
            <!-- EMOTE DE PESQUISAR -->
      <form action="pesquisar.php" method="POST">
      <button type="submit"  style="border: none ; background-color: white ;">
